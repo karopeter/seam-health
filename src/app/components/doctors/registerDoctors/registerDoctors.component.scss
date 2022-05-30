@@ -1,0 +1,129 @@
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 3rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 2rem;
+
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  [class^="col-"] {
+    float: left;
+
+    &:not(:last-child) {
+      margin-left: $gutter-horizontal;
+    }
+  }
+
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  }
+}
+
+.layout {
+  width: 100%;
+}
+
+.heading__primary {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.label__name {
+  font-size: 1rem;
+  color: #000;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.label__email {
+  margin-left: 2rem;
+  font-size: 1rem;
+  color: #000;
+  text-align: left;
+}
+
+.form__input {
+  height: 50%;
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(221, 219, 219, 0.478);
+}
+
+
+.form__invent {
+  margin-left: 2rem;
+  height: 50%;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  border: none;
+  background-color: rgba(221, 219, 219, 0.478);
+}
+
+.btn__ghost {
+  padding: 7px 13px;
+  position: static;
+  width: 220px;
+  height: 38px;
+  color: #fff;
+  background: #212529;
+  border-radius: 20px;
+  margin-left: 70rem;
+  font-size: 13px;
+  font-weight: 400;
+   margin-top: 1rem;
+  border: 1px solid #212529;
+}
+
+
+.doctor {
+  display: flex;
+  flex-direction: row;
+
+  &__searchInput {
+     padding: 14px;
+     width: 100vh;
+     height: 38px;
+     margin-top: 5rem;
+     margin-bottom: 4rem;
+     background-color: rgba(221, 219, 219, 0.478);
+     margin-left: 15rem;
+     border: 1px solid #CED4DA;
+     border-radius: 4px;
+  }
+
+  &__searchIcon {
+    position: absolute;
+    margin-top: 5.5rem;
+    margin-left: 16rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__span {
+    margin-top: 5.5rem;
+    position: absolute;
+    margin-left: 18rem;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+  }
+}

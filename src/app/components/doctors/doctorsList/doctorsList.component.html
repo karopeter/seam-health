@@ -1,0 +1,28 @@
+<div class="container">
+   <h4 class="heading-secondary">Doctor List</h4>
+</div>
+
+<section class="section-list">
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>City</th>
+        <th>Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ngClass="isSelected(doctor.id) ? 'shadow' : null" *ngFor="let doctor of doctors" (click)="toggleDoctor(doctor.id)">
+        <td class="inline-head">{{ doctor.name }}</td>
+        <td class="inline-head">{{ doctor.username }}</td>
+        <td class="inline-head">{{ doctor.email }}</td>
+        <td class="inline-head">{{ doctor.phone }}</td>
+        <td class="inline-head">{{ doctor.address.city }}</td>
+        <td class="inline-head">{{ doctor.website }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

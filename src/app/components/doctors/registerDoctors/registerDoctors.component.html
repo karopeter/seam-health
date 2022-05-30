@@ -1,0 +1,40 @@
+<div class="layout">
+  <h1 class="heading__primary">Register new Doctor</h1>
+  <form (ngSubmit)="createDoctor()">
+  <div class="row">
+    <div class="col-1-of-3">
+      <label for="name" class="label__name">Name</label>
+      <input type="text" class="form__input" id="autoSizingInput" [(ngModel)]="name" name="name" required/>
+    </div>
+    <div class="col-1-of-3">
+      <label for="username" class="label__name">Username</label>
+      <input type="text" class="form__input" id="autoSizingInput" [(ngModel)]="username" name="username" required/>
+    </div>
+    <div class="col-1-of-3">
+      <label for="email" class="label__email">Email</label>
+      <input type="text" class="form__invent" id="autoSizingInput" [(ngModel)]="email" name="email" required/>
+    </div>
+  </div>
+  <div class="row">
+   <div class="col-1-of-3">
+     <label for="phone" class="label__name">Phone</label>
+     <input type="text" class="form__input" id="autoSizingInput" [(ngModel)]="phone" name="phone" required/>
+   </div>
+   <div class="col-1-of-3">
+      <label for="city" class="label__name">City</label>
+      <input type="text"class="form__input" id="autoSizingInput" [(ngModel)]="city" name="city" required/>
+   </div>
+   <div class="col-1-of-3">
+     <label for="website" class="label__email">Website</label>
+     <input type="text" class="form__invent" id="autoSizingInput" [(ngModel)]="website" name="website" required/>
+   </div>
+  </div>
+    <button type="submit" class="btn__ghost">Register</button>
+ </form>
+   <div class="doctor">
+     <input type="text" class="doctor__searchInput" />
+     <img src="/assets/image/search.svg" alt="" class="doctor__searchIcon" />
+     <span class="doctor__span">Seach doctors</span>
+   </div>
+</div>
+<app-doctors></app-doctors>
