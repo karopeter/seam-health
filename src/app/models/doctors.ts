@@ -4,8 +4,9 @@ export interface Doctor {
   username: string;
   email: string;
   phone: string;
-  address: object;
-  city: object;
+  address: {
+    city: string;
+  };
   website: string;
 }
 

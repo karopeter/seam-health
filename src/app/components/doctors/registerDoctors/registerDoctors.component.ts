@@ -10,12 +10,13 @@ import { DoctorService } from '../../../services/doctors.service';
 
 export class RegisterDoctorsComponent implements OnInit {
   doctor!: Doctor;
+  id!: number;
   name = '';
   username = '';
   email = '';
   phone = '';
   address!: object;
-  city!: object;
+  city: any = {};
   website = '';
 
   constructor(private doctorService: DoctorService) { }
@@ -33,8 +34,7 @@ export class RegisterDoctorsComponent implements OnInit {
       username: this.username,
       email: this.email,
       phone: this.phone,
-      address: this.address,
-      city: this.city,
+      address: this.city,
       website: this.website
     };
     this.doctorService.registerDoctor(this.doctor).subscribe((response) => {
