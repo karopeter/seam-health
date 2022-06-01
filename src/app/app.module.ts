@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './home/footer.component';
 import { DoctorListComponent } from './components/doctors/doctorsList/doctorsList.component';
 import { RegisterDoctorsComponent } from './components/doctors/registerDoctors/registerDoctors.component';
+import { SearchDoctorsComponent } from './components/doctors/searchDoctors/searchDoctors.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RegisterDoctorsComponent } from './components/doctors/registerDoctors/r
     HomeComponent,
     FooterComponent,
     DoctorListComponent,
-    RegisterDoctorsComponent
+    RegisterDoctorsComponent,
+    SearchDoctorsComponent
   ],
   imports: [
     BrowserModule,

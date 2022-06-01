@@ -31,10 +31,6 @@
   </div>
     <button type="submit" class="btn__ghost">Register</button>
  </form>
-   <div class="doctor">
-     <input type="text" class="doctor__searchInput" />
-     <img src="/assets/image/search.svg" alt="" class="doctor__searchIcon" />
-     <span class="doctor__span">Seach doctors</span>
-   </div>
+   <app-search (searchTextChanged)="onSearchTextEntered($any($event.target))"></app-search>
 </div>
 <app-doctors></app-doctors>

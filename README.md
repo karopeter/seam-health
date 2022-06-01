@@ -1,27 +1,33 @@
 # SeamHealth
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
-## Development server
+Prerequisites:
+This is a simple guideline on how the project was built and how to understand this codebase.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Created a folder named components and nested the doctor folder inside the components. 
 
-## Code scaffolding
+Inside the doctor folder is where you would find all the codes used for building the user interfaces.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+RegisterDoctor components contains the form user interface where doctors register and input there informations and click the register button.
 
-## Build
+DoctorList components contains the lists of doctors informations processed from the backend database.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+SearchDoctor component contains an eventemitter where users can search for doctors informations  used property binding.
 
-## Running unit tests
+The Code files organizes the application into cohesive blocks of functionality. The modules are used for building the angular blocks together.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Also, there's a service folder to Store and Interact with Data functionalities and common tasks (Interacting with the Database on Server). 
 
-## Running end-to-end tests
+Spliting the app into such feature modules because that is the prerequisite to performance improvements and logic across components. 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Using Databinding for interacting with the component templates. 
 
-## Further help
+Created a model folder, generally responsible for modeling the data used in the view and handling the user interaction.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This project was created feb 2021, i want you to know that this is my second assessment for seamHealth. That's why
+
+i have other folders like the home, auth and footer.
+
+It was a past project which was assigned to me, unfortunately it wasn't acknowledge. You can review and know my performance 
+
+right from then to now. I decided to build on the same project. The only difference is the new folders.

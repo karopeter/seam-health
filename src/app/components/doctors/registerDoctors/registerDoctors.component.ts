@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Doctor } from '../../../models/doctors';
 import { DoctorService } from '../../../services/doctors.service';
 
@@ -42,4 +42,11 @@ export class RegisterDoctorsComponent implements OnInit {
       console.log(response);
     });
   }
+
+   searchText: string = '';
+
+   onSearchTextEntered(searchValue: string): void {
+     this.searchText = searchValue;
+     console.log(this.searchText);
+   }
 }
